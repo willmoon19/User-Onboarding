@@ -15,7 +15,6 @@ const Form = (props) => {
 
     const onChange = (event) => {
       const { name, value, checked, type } = event.target;
-      console.log(event)
       const valueToUse = type === "checkbox" ? checked : value;
       change(name, valueToUse);
     }

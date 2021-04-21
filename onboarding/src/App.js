@@ -34,7 +34,7 @@ function App() {
   const postNewUser = (newUserInfo) => {
     axios.post(`https://reqres.in/api/users`, newUserInfo)
     .then(res => {
-      console.log(res)
+      debugger
       setUser([res.data, ...user]);
       setUserInfo(defaultInfo);
     })
